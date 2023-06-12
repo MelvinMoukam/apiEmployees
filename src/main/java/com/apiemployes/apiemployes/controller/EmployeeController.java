@@ -48,24 +48,24 @@ public class EmployeeController {
         if(e.isPresent()){
             Employee currentEmployee = e.get();
 
-            String firstName = employee.getFirstname();
+            String firstName = employee.getFirstName();
             if(firstName != null){
-                currentEmployee.setFirstname(firstName);
+                currentEmployee.setFirstName(firstName);
             }
 
-            String lastName = employee.getLastname();
+            String lastName = employee.getLastName();
             if(lastName  != null){
-                currentEmployee.setFirstname(lastName);
+                currentEmployee.setFirstName(lastName);
             }
 
             String email = employee.getEmail();
             if(email != null){
-                currentEmployee.setFirstname(email);
+                currentEmployee.setFirstName(email);
             }
 
             String password = employee.getPassword();
             if(password != null){
-                currentEmployee.setFirstname(password);
+                currentEmployee.setFirstName(password);
             }
             employeeService.saveEmployee(currentEmployee);
             return currentEmployee;
