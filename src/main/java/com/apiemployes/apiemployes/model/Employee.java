@@ -20,8 +20,10 @@ public class Employee {
         @Column(name = "last_name")
         private String lastName ;
 
+        @Column(name = "mail")
         private String email;
 
+        @Column(name = "password")
         private String password;
 
 
