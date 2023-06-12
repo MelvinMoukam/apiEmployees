@@ -37,6 +37,7 @@ public class EmployeeController {
 
     @PostMapping("/employee")
     public Employee createEmployee (@RequestBody  Employee employee){
+
         return employeeService.saveEmployee(employee);
     }
 
@@ -78,6 +79,7 @@ public class EmployeeController {
 
     @DeleteMapping("/employee/{id}")
     public void deleteEmployee(@RequestBody final Long id){
+
         employeeService.deleteEmployee(id);
     }
 
